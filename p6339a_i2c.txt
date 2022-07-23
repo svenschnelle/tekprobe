@@ -1,0 +1,30 @@
+# P6339A I2C expander bit assignments
+
+DC: 0x72 0xfa (Full BW)
+AC: 0x72 0xf9 (Full BW)
+GND: 0x72 0xfa (Full BW)
+                            BB CC
+BW Full:   0x72 0xfa   1111 10 10
+BW 150MHz: 0x72 0xf6   1111 01 10
+BW 20Mhz:  0x72 0xf2   1111 00 10
+
+CC = 2: DC
+CC = 1: AC
+BW = 2: Full
+BW = 1: 150Mhz
+BW = 0: 20Mhz
+
+                X1  X10  G3 G2 G1 G0 A1 A0
+100V: 0x70 0x76  0  1    1  1  0  1  1   0 118
+50V:  0x70 0x56  0  1    0  1  0  1  1   0 86
+20V:  0x70 0x52  0  1    0  1  0  0  1   0 82
+10V:  0x70 0x4e  0  1    0  0  1  1  1   0 78
+5V:   0x70 0x4c  0  1    0  0  1  1  0   0 76
+2V:   0x70 0x50  0  1    0  1  0  0  0   0 80
+1V:   0x70 0x4c  0  1    0  0  1  1  0   0 76
+500mV 0x70 0x95  1  0    0  1  0  1  0   1 149
+200mV 0x70 0x91  1  0    0  1  0  0  0   1 145
+100mV 0x70 0x8d  1  0    0  0  1  1  0   1 141
+50mV  0x70 0x8d  1  0    0  0  1  1  0   1 141
+20mV  0x70 0x85  1  0    0  0  1  0  0   1 133
+10mV  0x70 0x85  1  0    0  0  0  1  0   1 133
