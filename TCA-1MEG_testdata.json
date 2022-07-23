@@ -1,0 +1,278 @@
+{
+  "l2":{
+    "elements":[ 7, 49, 255, 162, 255, 164, 217 ]
+  },
+  "l3":[ { "type":"elements_requiring_support", "elements":[ 26, 8, 20, 34, 70, 16, 30, 37, 7 ] },
+    { "type":"current_draw", "current_5v_pos":40, "current_15v_pos":40, "current_5v_neg":0, "current_15v_neg":0 },
+    { "type":"input_resistance", "value":1000000.0 },
+    { "type":"input_capacitance", "value":9.999999960041972e-12 },
+    { "type":"max_oper_range", "value":100.0 },
+    { "type":"instrument_instance", "name":"TCA-1MEG", "serial":"B010368" },
+    { "type":"tekprobe_version", "val0":3, "val1":3 },
+    { "type":"insert_delay", "value":1.8000000379103653e-09 },
+    { "type":"cascade_capable", "val0":0, "val1":0 },
+    { "type":"path_switch", "value":2, "members":[
+        [ { "type":"io_expander", "slave":112, "address":1, "value":0 } ],
+        [ { "type":"coupling", "value":1 },
+          { "type":"io_expander", "slave":112, "address":1, "value":1 }
+        ]
+      ]
+    },
+    {
+      "type":"path_switch",
+      "value":3,
+      "members":[
+        [
+          { "type":"scale_minmax", "min":1.0, "max":1.059999942779541 },
+          { "type":"path_switch", "value":3, "members":[
+              [
+                { "type":"lowpass", "value":20000000.0 },
+                { "type":"post_compensation0", "val0":1, "val1":0, "val2":-1124734897 },
+                { "type":"post_compensation0", "val0":1, "val1":1, "val2":1065500436 },
+                { "type":"post_compensation1", "val0":0, "val1":15 },
+                {
+                  "type":"timed_sequence",
+                  "members":[
+                    { "setting":112, "settling_time":254 },
+                    { "setting":72, "settling_time":0 },
+                    { "setting":200, "settling_time":1 },
+                    { "setting":72, "settling_time":1 },
+                    { "setting":0, "settling_time":0 },
+                    { "setting":128, "settling_time":1 },
+                    { "setting":0, "settling_time":0 },
+                    { "setting":48, "settling_time":0 },
+                    { "setting":176, "settling_time":1 },
+                    { "setting":48, "settling_time":0 },
+                    { "setting":64, "settling_time":0 },
+                    { "setting":192, "settling_time":1 },
+                    { "setting":64, "settling_time":0 },
+                    { "setting":102, "settling_time":0 },
+                    { "setting":230, "settling_time":1 },
+                    { "setting":102, "settling_time":0 }
+                  ]
+                }
+              ],
+              [
+                { "type":"lowpass", "value":100000000.0 },
+                { "type":"post_compensation0", "val0":1, "val1":0, "val2":-1124918507 },
+                { "type":"post_compensation0", "val0":1, "val1":1, "val2":1065505385 },
+                { "type":"post_compensation1", "val0":1, "val1":15 },
+                { "type":"timed_sequence", "members":[
+                    { "setting":112, "settling_time":254 },
+                    { "setting":72, "settling_time":0 },
+                    { "setting":200, "settling_time":1 },
+                    { "setting":72, "settling_time":1 },
+                    { "setting":8, "settling_time":0 },
+                    { "setting":136, "settling_time":1 },
+                    { "setting":8, "settling_time":0 },
+                    { "setting":48, "settling_time":0 },
+                    { "setting":176, "settling_time":1 },
+                    { "setting":48, "settling_time":0 },
+                    { "setting":64, "settling_time":0 },
+                    { "setting":192, "settling_time":1 },
+                    { "setting":64, "settling_time":0 },
+                    { "setting":102, "settling_time":0 },
+                    { "setting":230, "settling_time":1 },
+                    { "setting":102, "settling_time":0 }
+                  ]
+                }
+              ],
+              [
+                { "type":"lowpass", "value":500000000.0 },
+                { "type":"post_compensation0", "val0":1, "val1":0, "val2":-1127347848 },
+                { "type":"post_compensation0", "val0":1, "val1":1, "val2":1065565448 },
+                { "type":"post_compensation1", "val0":2, "val1":15 },
+                { "type":"timed_sequence", "members":[
+                    { "setting":112, "settling_time":254 },
+                    { "setting":72, "settling_time":0 },
+                    { "setting":200, "settling_time":1 },
+                    { "setting":72, "settling_time":1 },
+                    { "setting":16, "settling_time":0 },
+                    { "setting":144, "settling_time":1 },
+                    { "setting":16, "settling_time":0 },
+                    { "setting":48, "settling_time":0 },
+                    { "setting":176, "settling_time":1 },
+                    { "setting":48, "settling_time":0 },
+                    { "setting":64, "settling_time":0 },
+                    { "setting":192, "settling_time":1 },
+                    { "setting":64, "settling_time":0 },
+                    { "setting":102, "settling_time":0 },
+                    { "setting":230, "settling_time":1 },
+                    { "setting":102, "settling_time":0 }
+                  ]
+                }
+              ]
+            ]
+          }
+        ],
+        [
+          { "type":"scale", "value":0.10000000149011612 },
+          { "type":"scale_minmax", "min":0.80000001192092896, "max":1.0 },
+          { "type":"insert_delay", "value":1.3999999770586413e-10 },
+          { "type":"path_switch", "value":3, "members":[
+              [
+                { "type":"lowpass", "value":20000000.0 },
+                { "type":"post_compensation0", "val0":1, "val1":0, "val2":-1129944692 },
+                { "type":"post_compensation0", "val0":1, "val1":1, "val2":1064035986 },
+                { "type":"post_compensation1", "val0":3, "val1":15 },
+                { "type":"timed_sequence", "members":[
+                    { "setting":112, "settling_time":254 },
+                    { "setting":84, "settling_time":0 },
+                    { "setting":212, "settling_time":1 },
+                    { "setting":84, "settling_time":1 },
+                    { "setting":4, "settling_time":0 },
+                    { "setting":132, "settling_time":1 },
+                    { "setting":4, "settling_time":0 },
+                    { "setting":46, "settling_time":0 },
+                    { "setting":174, "settling_time":1 },
+                    { "setting":46, "settling_time":0 },
+                    { "setting":68, "settling_time":0 },
+                    { "setting":196, "settling_time":1 },
+                    { "setting":68, "settling_time":0 },
+                    { "setting":102, "settling_time":0 },
+                    { "setting":230, "settling_time":1 },
+                    { "setting":102, "settling_time":0 }
+                  ]
+                }
+              ],
+              [
+                { "type":"lowpass", "value":100000000.0 },
+                { "type":"post_compensation0", "val0":1, "val1":0, "val2":-1130116491 }, 
+                { "type":"post_compensation0", "val0":1, "val1":1, "val2":1064041305 },
+                { "type":"post_compensation1", "val0":4, "val1":15 },
+                { "type":"timed_sequence", "members":[
+                    { "setting":112, "settling_time":254 },
+                    { "setting":84, "settling_time":0 },
+                    { "setting":212, "settling_time":1 },
+                    { "setting":84, "settling_time":1 },
+                    { "setting":12, "settling_time":0 },
+                    { "setting":140, "settling_time":1 },
+                    { "setting":12, "settling_time":0 },
+                    { "setting":46, "settling_time":0 },
+                    { "setting":174, "settling_time":1 },
+                    { "setting":46, "settling_time":0 },
+                    { "setting":68, "settling_time":0 },
+                    { "setting":196, "settling_time":1 },
+                    { "setting":68, "settling_time":0 },
+                    { "setting":102, "settling_time":0 },
+                    { "setting":230, "settling_time":1 },
+                    { "setting":102, "settling_time":0 }
+                  ]
+                }
+              ],
+              [
+                {
+                  "type":"lowpass", "value":500000000.0 },
+                { "type":"post_compensation0", "val0":1, "val1":0, "val2":-1132678976 },
+                { "type":"post_compensation0", "val0":1, "val1":1, "val2":1064154635 },
+                { "type":"post_compensation1", "val0":5, "val1":15 },
+                { "type":"timed_sequence", "members":[
+                    { "setting":112, "settling_time":254 },
+                    { "setting":84, "settling_time":0 },
+                    { "setting":212, "settling_time":1 },
+                    { "setting":84, "settling_time":1 },
+                    { "setting":20, "settling_time":0 },
+                    { "setting":148, "settling_time":1 },
+                    { "setting":20, "settling_time":0 },
+                    { "setting":46, "settling_time":0 },
+                    { "setting":174, "settling_time":1 },
+                    { "setting":46, "settling_time":0 },
+                    { "setting":68, "settling_time":0 },
+                    { "setting":196, "settling_time":1 },
+                    { "setting":68, "settling_time":0 },
+                    { "setting":102, "settling_time":0 },
+                    { "setting":230, "settling_time":1 },
+                    { "setting":102, "settling_time":0 }
+                  ]
+                }
+              ]
+            ]
+          }
+        ],
+        [
+          { "type":"scale", "value":0.0099999997764825821 },
+          { "type":"scale_minmax", "min":0.69999998807907104, "max":1.0 },
+          { "type":"insert_delay", "value":2.6200000502463183e-10 },
+          { "type":"path_switch", "value":3, "members":[
+              [ { "type":"lowpass", "value":20000000.0 },
+                { "type":"post_compensation0", "val0":1, "val1":0, "val2":-1129131870 },
+                { "type":"post_compensation0", "val0":1, "val1":1, "val2":1064032514 },
+                { "type":"post_compensation1", "val0":6, "val1":15 },
+                { "type":"timed_sequence", "members":[
+                    { "setting":112, "settling_time":254 },
+                    { "setting":82, "settling_time":0 },
+                    { "setting":210, "settling_time":1 },
+                    { "setting":82, "settling_time":1 },
+                    { "setting":2, "settling_time":0 },
+                    { "setting":130, "settling_time":1 },
+                    { "setting":2, "settling_time":0 },
+                    { "setting":46, "settling_time":0 },
+                    { "setting":174, "settling_time":1 },
+                    { "setting":46, "settling_time":0 },
+                    { "setting":66, "settling_time":0 },
+                    { "setting":194, "settling_time":1 },
+                    { "setting":66, "settling_time":0 },
+                    { "setting":102, "settling_time":0 },
+                    { "setting":230, "settling_time":1 },
+                    { "setting":102, "settling_time":0 }
+                  ]
+                }
+              ],
+              [
+                { "type":"lowpass", "value":100000000.0 },
+                { "type":"post_compensation0", "val0":1, "val1":0, "val2":-1129305279 },
+                { "type":"post_compensation0", "val0":1, "val1":1, "val2":1064043519 },
+                { "type":"post_compensation1", "val0":7, "val1":15 },
+                { "type":"timed_sequence", "members":[
+                    { "setting":112, "settling_time":254 },
+                    { "setting":82, "settling_time":0 },
+                    { "setting":210, "settling_time":1 },
+                    { "setting":82, "settling_time":1 },
+                    { "setting":10, "settling_time":0 },
+                    { "setting":138, "settling_time":1 },
+                    { "setting":10, "settling_time":0 },
+                    { "setting":46, "settling_time":0 },
+                    { "setting":174, "settling_time":1 },
+                    { "setting":46, "settling_time":0 },
+                    { "setting":66, "settling_time":0 },
+                    { "setting":194, "settling_time":1 },
+                    { "setting":66, "settling_time":0 },
+                    { "setting":102, "settling_time":0 },
+                    { "setting":230, "settling_time":1 },
+                    { "setting":102, "settling_time":0 }
+                  ]
+                }
+              ],
+              [
+                { "type":"lowpass", "value":500000000.0 },
+                { "type":"post_compensation0", "val0":1, "val1":0, "val2":-1129123280 },
+                { "type":"post_compensation0", "val0":1, "val1":1, "val2":1064032698 },
+                { "type":"post_compensation1", "val0":8, "val1":15 },
+                { "type":"timed_sequence", "members":[
+                    { "setting":112, "settling_time":254 },
+                    { "setting":82, "settling_time":0 },
+                    { "setting":210, "settling_time":1 },
+                    { "setting":82, "settling_time":1 },
+                    { "setting":18, "settling_time":0 },
+                    { "setting":146, "settling_time":1 },
+                    { "setting":18, "settling_time":0 },
+                    { "setting":46, "settling_time":0 },
+                    { "setting":174, "settling_time":1 },
+                    { "setting":46, "settling_time":0 },
+                    { "setting":66, "settling_time":0 },
+                    { "setting":194, "settling_time":1 },
+                    { "setting":66, "settling_time":0 },
+                    { "setting":102, "settling_time":0 },
+                    { "setting":230, "settling_time":1 },
+                    { "setting":102, "settling_time":0 }
+                  ]
+                }
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    { "type":"dynamic_range", "value":1.0 }
+  ]
+}

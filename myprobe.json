@@ -1,0 +1,26 @@
+{
+  "l2" : { "elements" : [ 3, 49, 248 ] },
+  "l3" : [
+	{ "type" : "tekprobe_identify", "val0":3, "val1":2, "val2":4 },
+	{ "type" : "elements_requiring_support", "elements" : [ 11, 14, 15, 8, 34, 16 ] },
+	{ "type" : "instrument_instance", "name" : "P6339A", "serial" : "B010289" },
+	{ "type" : "current_draw", "current_15v_neg" : 0, "current_15v_pos" : 21, "current_5v_neg" : 16, "current_5v_pos" : 20 },
+	{ "type" : "input_resistance", "value" : 1e6 },
+	{ "type" : "insert_delay", "value" : 5.4e-09 },
+	{ "type" : "lowpass", "value" : 500e6 },
+	{ "type" : "scale", "value":0.2 },
+	{ "type" : "path_switch", "value":2, "members":[
+		[ { "type":"io_expander", "slave":114, "address":3, "value":2  } ],
+		[ { "type":"coupling", "value":1 },
+		  { "type":"io_expander", "slave":114, "address":3, "value":1 } ]
+		]
+	},
+	{ "type":"path_switch", "value":3, "members":[
+		[ { "type":"io_expander", "slave":114, "address":12, "value":8 } ],
+		[ { "type":"lowpass", "value":150000000.0 },
+		  { "type":"io_expander", "slave":114, "address":12, "value":4 } ],
+		[ { "type":"lowpass", "value":20000000.0 },
+		  { "type":"io_expander", "slave":114, "address":12, "value":0 } ]
+		]
+	}
+]}

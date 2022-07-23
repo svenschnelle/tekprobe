@@ -1,0 +1,50 @@
+{
+  "l2":{ "elements":[ 3, 49, 248 ] },
+  "l3":[
+    { "type":"elements_requiring_support", "elements":[ 11, 14, 15, 8, 34, 16 ] },
+    { "type":"instrument_instance", "name":"P7380SMA", "serial":"B999999" },
+    { "type":"current_draw", "current_5v_pos":37, "current_15v_pos":19, "current_5v_neg":25, "current_15v_neg":63 },
+    { "type":"input_resistance", "value":50.0 },
+    { "type":"insert_delay", "value":5.4000000027087935e-09 },
+    { "type":"enumeration", "value":"ATTENuation:12.5X,2.5X" },
+    { "type":"enumeration", "value":"VTERMSource:AUTO,INTernal,EXTernal" },
+    { "type":"enum_next_button", "number":0, "slave":64, "pollvalue":96 },
+    { "type":"enum_next_button", "number":1, "slave":64, "pollvalue":97 },
+    { "type":"lowpass", "value":8000000000.0 },
+    { "type":"path_switch", "value":2, "members":[
+        [
+          { "type":"dynamic_range", "value":1.5 },
+          { "type":"scale", "value":0.079999998211860657 },
+          { "type":"enum_assertion", "number":0, "value":0 },
+          { "type":"post_compensation1", "val0":0, "val1":15 },
+          { "type":"io_expander", "slave":66, "address":1, "value":1 }
+        ],
+        [
+          { "type":"dynamic_range", "value":0.3125 },
+          { "type":"scale", "value":0.40000000596046448 },
+          { "type":"enum_assertion", "number":0, "value":1 },
+          { "type":"post_compensation1", "val0":1, "val1":15 },
+          { "type":"io_expander", "slave":66, "address":1, "value":0 }
+        ]
+      ]
+    },
+    { "type":"path_switch", "value":3, "members":[
+        [
+          { "type":"vtermsource", "value":1 },
+          { "type":"io_expander", "slave":66, "address":6, "value":4 },
+          { "type":"enum_assertion", "number":1, "value":2 }
+        ],
+        [
+          { "type":"vtermsource", "value":2 },
+          { "type":"io_expander", "slave":66, "address":6, "value":0 },
+          { "type":"enum_assertion", "number":1, "value":0 }
+        ],
+        [
+          { "type":"vtermsource", "value":3 },
+          { "type":"io_expander", "slave":66, "address":6, "value":2 },
+          { "type":"enum_assertion", "number":1, "value":1 }
+        ]
+      ]
+    }
+  ]
+}

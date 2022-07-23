@@ -1,0 +1,91 @@
+{
+  "l2":{ "elements":[ 5, 49, 255, 162, 169 ] },
+  "l3":[ { "type":"tekprobe_identify", "val0":3, "val1":0, "val2":0 },
+    { "type":"instrument_instance", "name":"P6339A", "serial":"B010289" },
+    { "type":"current_draw", "current_5v_pos":20, "current_15v_pos":21, "current_5v_neg":16, "current_15v_neg":0 },
+    { "type":"elements_requiring_support", "elements":[ 34, 8, 16, 25, 26, 30, 36 ] },
+    { "type":"input_resistance", "value":10000000.0 },
+    { "type":"input_capacitance", "value":7.9999999680335776e-12 },
+    { "type":"scale", "value":0.10000000149011612 },
+    { "type":"path_switch", "value":2, "members":[
+        [ { "type":"i2c", "slave":114, "address":3, "val0":2, "val1":2 } ],
+        [ { "type":"i2c", "slave":114, "address":3, "val0":1, "val1":2 },
+          { "type":"coupling", "value":1 }
+        ]
+      ]
+    },
+    { "type":"path_switch", "value":3, "members":[
+        [ { "type":"io_expander", "slave":112, "address":3, "value":2 },
+          { "type":"i2c", "slave":112, "address":192, "val0":64, "val1":2 },
+          { "type":"scale", "value":0.0099999997764825821 },
+          { "type":"dynamic_range", "value":2.0 },
+          { "type":"path_switch", "value":4, "members":[
+              [ { "type":"offset_injector", "value":0.13220000267028809 },
+                { "type":"scale", "value":2.0 },
+                { "type":"io_expander", "slave":112, "address":60, "value":12 } ],
+              [ { "type":"offset_injector", "value":1.3339999914169312 },
+                { "type":"scale", "value":1.0 },
+                { "type":"io_expander", "slave":112, "address":60, "value":16 } ],
+              [ { "type":"offset_injector", "value":1.3339999914169312 },
+                { "type":"scale", "value":0.40000000596046448 },
+                { "type":"io_expander", "slave":112, "address":60, "value":20 } ],
+              [ { "type":"offset_injector", "value":1.3339999914169312 },
+                { "type":"scale", "value":0.20000000298023224 },
+                { "type":"io_expander", "slave":112, "address":60, "value":52 } ]
+            ]
+          }
+        ],
+        [
+          { "type":"io_expander", "slave":112, "address":3, "value":0 },
+          { "type":"i2c", "slave":112, "address":192, "val0":64, "val1":2 },
+          { "type":"scale", "value":0.10000000149011612 },
+          { "type":"dynamic_range", "value":2.0 },
+          { "type":"path_switch", "value":3, "members":[
+              [ { "type":"offset_injector", "value":0.13220000267028809 },
+                { "type":"scale", "value":2.0 },
+                { "type":"io_expander", "slave":112, "address":60, "value":12 } ],
+              [ { "type":"offset_injector", "value":1.3339999914169312 },
+                { "type":"scale", "value":1.0 },
+                { "type":"io_expander", "slave":112, "address":60, "value":16 } ],
+              [ { "type":"offset_injector", "value":1.3339999914169312 },
+                { "type":"scale", "value":0.40000000596046448 },
+                { "type":"io_expander", "slave":112, "address":60, "value":20 } ]
+            ]
+          }
+        ],
+        [ { "type":"io_expander", "slave":112, "address":3, "value":1 },
+          { "type":"i2c", "slave":112, "address":192, "val0":128, "val1":2 },
+          { "type":"scale", "value":1.0 },
+          { "type":"dynamic_range", "value":2.0 },
+          { "type":"path_switch", "value":5, "members":[
+              [ { "type":"offset_injector", "value":0.13220000267028809 },
+                { "type":"scale", "value":10.0 },
+                { "type":"io_expander", "slave":112, "address":60, "value":4 } ],
+              [ { "type":"offset_injector", "value":0.13220000267028809 },
+                { "type":"scale", "value":5.0 },
+                { "type":"io_expander", "slave":112, "address":60, "value":8 } ],
+              [ { "type":"offset_injector", "value":0.13220000267028809 },
+                { "type":"scale", "value":2.0 },
+                { "type":"io_expander", "slave":112, "address":60, "value":12 } ],
+              [ { "type":"offset_injector", "value":1.3339999914169312 },
+                { "type":"scale", "value":1.0 },
+                { "type":"io_expander", "slave":112, "address":60, "value":16 } ],
+              [ { "type":"offset_injector", "value":1.3339999914169312 },
+                { "type":"scale", "value":0.40000000596046448 },
+                { "type":"io_expander", "slave":112, "address":60, "value":20 } ]
+            ]
+          }
+        ]
+      ]
+    },
+    { "type":"path_switch", "value":3, "members":[
+        [ { "type":"io_expander", "slave":114, "address":12, "value":8 } ],
+        [ { "type":"lowpass", "value":150000000.0 },
+          { "type":"io_expander", "slave":114, "address":12, "value":4 } ],
+        [ { "type":"lowpass", "value":20000000.0 },
+          { "type":"io_expander", "slave":114, "address":12, "value":0 } ]
+      ]
+    },
+    { "type":"dynamic_range", "value":0.25 }
+  ]
+}

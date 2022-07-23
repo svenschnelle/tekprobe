@@ -1,0 +1,21 @@
+{
+  "l2":{ "elements":[ 3, 49, 149 ] },
+  "l3":[
+    { "type":"tekprobe_identify", "val0":3, "val1":2, "val2":4 },
+    { "type":"instrument_instance", "name":"P7240", "serial":"Q000029" },
+    { "type":"current_draw", "current_5v_pos":3, "current_15v_pos":10, "current_5v_neg":25, "current_15v_neg":0 },
+    { "type":"input_resistance", "value":20000.0 },
+    { "type":"input_capacitance", "value":9.999999960041972e-13 },
+    { "type":"scale", "value":0.20000000298023224 },
+    { "type":"dynamic_range", "value":0.40000000596046448 },
+    { "type":"offset_injector", "value":1.0 },
+    { "type":"lowpass", "value":4000000000.0 },
+    { "type":"pot_setting", "val0":80, "val1":160, "val2":34 },
+    { "type":"pot_setting", "val0":80, "val1":161, "val2":27 },
+    { "type":"pot_setting", "val0":80, "val1":162, "val2":35 },
+    { "type":"pot_setting", "val0":82, "val1":160, "val2":24 },
+    { "type":"pot_setting", "val0":82, "val1":161, "val2":25 },
+    { "type":"pot_setting", "val0":82, "val1":162, "val2":0 },
+    { "type":"pot_setting", "val0":82, "val1":163, "val2":0 }
+  ]
+}
